@@ -36,3 +36,5 @@ npm install axios
 
 // Sombras
 npm i react-native-shadow-2
+
+npx expo start --localhost --android
