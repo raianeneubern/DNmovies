@@ -90,11 +90,11 @@ export default function MovieScreen() {
                 </Text>
 
                 {/* Elenco */}
-                <Cast navigation={navigation} cast={cast} />
+                {cast.length > 0 && <Cast navigation={navigation} cast={cast} />}
 
                 {/* Filmes Similares */}
-                {/* <MovieList title="Filmes Similares" hideSeeAll={true} data={similarMovies} /> */}
-                
+                {similarMovies.length > 0 && <MovieList title="Filmes Similares" hideSeeAll={true} data={similarMovies} />}
+
               </View>
             </>
           )
